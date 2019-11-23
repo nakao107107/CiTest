@@ -10,9 +10,9 @@ jobs:
       mysql:
         image: postgres:10.8
         env:
-          POSTGRES_USER: admin
-          POSTGRES_PASSWORD: password
-          POSTGRES_DB: admin
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
 
     steps:
       - uses: actions/checkout@v1
@@ -22,8 +22,6 @@ jobs:
         run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
       - name: Generate key
         run: php artisan key:generate
-      - name: Wait for db
-        run: dockerize -wait tcp://localhost:5432 -timeout 1m
       - name: Create Database
         run: php artisan migrate
 
