@@ -6,17 +6,16 @@ jobs:
   laravel-tests:
     runs-on: ubuntu-latest
 
-    services:
-      postgres:
-        image: postgres:10.8
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_DB: postgres
-
     steps:
       - uses: actions/checkout@v1
       - name: Copy .env
         run: cp .env.ci .env
+     - name: Setup PostgreSQL
+       uses: Harmon758/postgresql-action@v1.0.0
+       with:
+         postgresql db: postgres
+         postgresql user: postgres
+         postgresql password: postgres
       - name: Install Dependencies
         run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
       - name: Generate key
