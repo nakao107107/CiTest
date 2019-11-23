@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deaa6dc0-6749-436f-b581-e62217ce99ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.ci" beforeDir="false" afterPath="$PROJECT_DIR$/.env.ci" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/hello.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/hello.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -211,12 +211,12 @@
       <option name="presentableId" value="Default" />
       <updated>1574431967586</updated>
       <workItem from="1574431971081" duration="829000" />
-      <workItem from="1574476513522" duration="881000" />
+      <workItem from="1574476513522" duration="1040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1710000" />
+    <option name="totallyTimeSpent" value="1869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />

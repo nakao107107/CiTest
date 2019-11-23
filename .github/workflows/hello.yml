@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     services:
-      mysql:
+      postgres:
         image: postgres:10.8
         env:
           POSTGRES_USER: postgres
